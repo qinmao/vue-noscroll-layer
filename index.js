@@ -1,6 +1,7 @@
 ;
 (function () {
     let noScroll = {}
+    import BScroll from "better-scroll";
     noScroll.install = function (Vue) {
         Vue.directive('noScroll', {
             update(el, binding) {
@@ -11,7 +12,7 @@
                     event.preventDefault();
                   });
                   if (parentEl) {
-                    import BScroll from "better-scroll";
+                    
                     new BScroll(document.getElementById(parentEl));
                   }
                 } else {
