@@ -1,8 +1,8 @@
 ;
 (function () {
-    let noScroll = {}
+    let vNoScroll = {}
     import BScroll from "better-scroll";
-    noScroll.install = function (Vue) {
+    vNoScroll.install = function (Vue) {
         Vue.directive('noScroll', {
             update(el, binding) {
                 let show = binding.value.showLayer,
@@ -25,13 +25,13 @@
 
     }
     if (typeof exports === 'object') {
-        module.exports = noScroll
+        module.exports = vNoScroll
     } else if (typeof define === 'function' && define.amd) {
         define([], function () {
-            return noScroll
+            return vNoScroll
         })
     } else if (window.Vue) {
-        window.noScroll = noScroll
-        Vue.use(noScroll)
+        window.vNoScroll = vNoScroll
+        Vue.use(vNoScroll)
     }
 })()
