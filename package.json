@@ -1,0 +1,24 @@
+{
+  "name": "vue-noscroll-layer",
+  "version": "1.0.0",
+  "description": "弹层禁止滚动",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinmao/vue-noscroll-layer.git"
+  },
+  "keywords": [
+    "弹层禁止滚动",
+    "vue"
+  ],
+  "author": "xintairuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qinmao/vue-noscroll-layer/issues"
+  },
+  "homepage": "https://github.com/qinmao/vue-noscroll-layer#readme",
+  "dependencies": {
+    "better-scroll": "^1.14.1"
+  }
+}
