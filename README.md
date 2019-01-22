@@ -3,7 +3,7 @@
 
 ## Install
 ```shell
-npm install v-no-scroll  -S
+npm install no-scroll-layer  -S
 ```
 ## Quick Start
 ``` javascript
