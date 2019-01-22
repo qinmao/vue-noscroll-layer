@@ -23,12 +23,12 @@ export default {
   }
 }
 1. 自身无滚动
-<div class="mask"  v-noScroll="{showLayer}" v-show="showLayer">
+<div class="mask"  v-no-scroll="{showLayer}" v-show="showLayer">
     // 写你的结构
 </div>
 
 2. 自身有滚动
-<div class="mask"  v-noScroll="{showLayer,parentEl:'scroll-el'}" v-show="showLayer">
+<div class="mask"  v-no-scroll="{showLayer,parentEl:'scroll-el'}" v-show="showLayer">
     <div id="scroll-el">
         <ul>
           <li></li>
