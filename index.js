@@ -3,7 +3,7 @@ import BScroll from "better-scroll";
 (function () {
     let vNoScroll = {}
     vNoScroll.install = function (Vue) {
-        Vue.directive('noScroll', {
+        Vue.directive('no-scroll', {
             update(el, binding) {
                 let show = binding.value.showLayer,
                     parentEl = binding.value.parentEl;
