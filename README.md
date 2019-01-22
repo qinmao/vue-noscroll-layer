@@ -10,7 +10,7 @@ npm install v-no-scroll  -S
 
 在main.js 注册插件 使其成为一个全局指令
 import Vue from 'vue'
-import noScroll from 'no-scroll'
+import noScroll from 'v-no-scroll'
  Vue.use(noScroll)
 
 // 全局指令 v-noScroll 之后在每个xx.vue 文件中 写法如下
