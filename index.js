@@ -1,7 +1,7 @@
 ;
+import BScroll from "better-scroll";
 (function () {
     let vNoScroll = {}
-    import BScroll from "better-scroll";
     vNoScroll.install = function (Vue) {
         Vue.directive('noScroll', {
             update(el, binding) {
