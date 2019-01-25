@@ -1,6 +1,6 @@
 {
   "name": "no-scroll-layer",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "弹层禁止滚动",
   "main": "index.js",
   "scripts": {},

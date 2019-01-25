@@ -1,5 +1,4 @@
 let vNoScroll = {}
-import BScroll from "better-scroll";
 vNoScroll.install = function (Vue) {
     Vue.directive('no-scroll', function (el, binding) {
         let show = binding.value.showLayer,
@@ -9,7 +8,13 @@ vNoScroll.install = function (Vue) {
                 event.preventDefault();
             });
             if (parentEl) {
-                new BScroll(document.getElementById(parentEl));
+                // 按需加载引入
+                // default 输出接口，可以用参数直接获得,使用具名输入的形式
+                import('better-scroll').then(({
+                    default: BScroll
+                }) => {
+                    new BScroll(document.getElementById(parentEl));
+                })
             }
         } else {
             el.removeEventListener("touchmove", function (event) {
